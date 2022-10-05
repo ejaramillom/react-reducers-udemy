@@ -57,5 +57,20 @@ In this example:
 
     setTimeout is NOT added as a dependency because it's a built-in API (built-into the browser) - it's independent from React and your components, it doesn't change
 
+# useState vs useReducer
 
+some general rules
+
+useState:
+
+- the main state management tool
+- great for independent pieces of state/data
+- great if state updates are easy and limited to a few kinds of updates
+
+useReducer
+
+- great if you need more power. for example an object whose state depents on other components or objects, and also has several states for example created, on hold, approved
+evaluated, not only true false, or on and off things
+- should be considered if you have related pieces of state/data
+- can be helpful if you have more complex state updates
 
